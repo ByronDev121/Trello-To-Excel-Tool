@@ -33,9 +33,11 @@ Set up TrelloData.xlsm
 1. Open TrelloData.xlsm 
 
 2. In the 'Analytics' sheet, right click on the button named 'Update Data - Run Python Script' > Assign Macro...
+
 [![Image](./assests/open-marcos-1.png)]
 
 Then click 'RunPythonScript' and then click edit.
+
 [![Image](./assests/open-marcos-2.png)]
 
 3. Add paths to your python executable and python script(json_to_csv.py) to PythonExe and PythonScript variables on line 10 and 13:
