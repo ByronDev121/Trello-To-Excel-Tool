@@ -1,6 +1,8 @@
 # Trello-To-Excel-Tool
 This is a tool which uses the trello api to request the kanban board data in JSON format and write that to csv. The VBA Macro are used to run the python script form excel. The excel file then queries the data from the csv file the python script updated.
 
+[![Image](./assests/main-img.PNG)](https://github.com/ByronDev121/Trello-To-Excel-Tool/)
+
 Installing Python
 --------------
 First install Python on your machine. [This](https://www.howtogeek.com/197947/how-to-install-python-on-windows/) is a great tutorial.
@@ -30,7 +32,11 @@ Set up TrelloData.xlsm
 ------
 1. Open TrelloData.xlsm 
 
-2. In the 'Analytics' sheet, right click on the button named 'Update Data - Run Python Script' > Assign Macro... Then click 'RunPythonScript' and then click edit.
+2. In the 'Analytics' sheet, right click on the button named 'Update Data - Run Python Script' > Assign Macro...
+[![Image](./assests/open-marcos-1.png)]
+
+Then click 'RunPythonScript' and then click edit.
+[![Image](./assests/open-marcos-2.png)]
 
 3. Add paths to your python executable and python script(json_to_csv.py) to PythonExe and PythonScript variables on line 10 and 13:
 ```vba
@@ -52,7 +58,21 @@ python
 >>os.path.dirname(sys.executable)
 ```
 
-5. Once the python script is running the last thing left in the setup is recreating the query to data_file.csv. In the excel file 'TrelloData.xlsm'. Click the data tab > open queries and connections and delete the exciting qeury. Then in the tool bar click new qeuery > file/csv and choose the data_file.csv int he directory. This should create a new sheet: 'Sheet1' Rename thta sheet to Trello_Data and delete the old one. Lastly you'll have to update/replace the reference to Trello_Data everywhere #Ref exists in the Analytics sheet.
+5. Once the python script is running the last thing left in the setup is recreating the query to data_file.csv. In the excel file 'TrelloData.xlsm'. Click the data tab > open queries and connections and delete the exciting qeury. 
+[![Image](./assests/open-marcos-2.png)]
+
+Then in the tool bar click new qeuery > file/csv and choose the data_file.csv int he directory.
+
+
+This should create a new sheet: 'Sheet1' Rename thta sheet to Trello_Data and delete the old one. 
+
+[![Image](./assests/import-data-1.png)]
+
+6. Lastly you'll have to update/replace the reference to Trello_Data everywhere #Ref exists in the Analytics sheet.
+
+[![Image](./assests/import-data-2.png)]
+
+[![Image](./assests/import-data-3.png)]
 
 Usage
 --------------
