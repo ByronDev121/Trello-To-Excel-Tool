@@ -62,13 +62,15 @@ python
 [![Image](./assests/open-marcos-2.png)]
 
 Then in the tool bar click new qeuery > file/csv and choose the data_file.csv int he directory.
-import-data-1
+
+
 This should create a new sheet: 'Sheet1' Rename thta sheet to Trello_Data and delete the old one. 
-[![Image](./assests/import-data-3.png)]
+
+[![Image](./assests/import-data-1.png)]
 
 6. Lastly you'll have to update/replace the reference to Trello_Data everywhere #Ref exists in the Analytics sheet.
-import-data-2
-[![Image](./assests/import-data-3.png)]
+
+[![Image](./assests/import-data-2.png)]
 
 [![Image](./assests/import-data-3.png)]
 
