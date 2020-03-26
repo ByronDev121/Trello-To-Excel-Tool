@@ -1,6 +1,8 @@
 # Trello-To-Excel-Tool
 This is a tool which uses the trello api to request the kanban board data in JSON format and write that to csv. The VBA Macro are used to run the python script form excel. The excel file then queries the data from the csv file the python script updated.
 
+[![Image](./assests/main-img.PNG)](https://github.com/ByronDev121/Trello-To-Excel-Tool/)
+
 Installing Python
 --------------
 First install Python on your machine. [This](https://www.howtogeek.com/197947/how-to-install-python-on-windows/) is a great tutorial.
