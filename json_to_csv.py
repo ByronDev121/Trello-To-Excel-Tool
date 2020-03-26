@@ -2,6 +2,10 @@ import csv
 import json
 import requests
 
+# Set your credentials here:
+api_key = '75a79d891741cd33cec0e2dee00970ed'
+token = 'def2f8c2f678bd71520547b5e5c7be3e0ebe5d037a1ccd0923c8044b74863ebd'
+
 
 def write_data_to_csv(cards, lists, members, csv_writer):
     for index, card in enumerate(cards):
@@ -92,8 +96,7 @@ def get_board_id_by_member_credentials(api_key, token):
 
 def get_trello_board_data_via_api():
     # Registered with trello for developers for:
-    api_key = '75a79d891741cd33cec0e2dee00970ed'
-    token = 'def2f8c2f678bd71520547b5e5c7be3e0ebe5d037a1ccd0923c8044b74863ebd'
+
 
     board_id = get_board_id_by_member_credentials(api_key, token)
     board = get_board_by_id(board_id, api_key, token)
@@ -117,7 +120,7 @@ def get_trello_board_data_from_file():
 
 
 def main():
-    # data, cards, lists, members = get_trello_board_data_from_file()
+    # cards, lists, members = get_trello_board_data_from_file()
     cards, lists, members = get_trello_board_data_via_api()
 
     data_file = open('C:\\Users\\toast\\PycharmProjects\\testing\\data_file.csv', 'w', newline='')
