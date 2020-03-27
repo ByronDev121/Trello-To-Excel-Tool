@@ -75,6 +75,7 @@ python
 ![Image](./assests/import-data-2.png)
 
 *Maybe there is a better way to do this please let me know if you find a cleaner solution*
+
 6.1. Just replace #Ref with Trello_Data *(Or whatever you renamed your trello data sheet to)*
 
 ![Image](./assests/import-data-3.png)
