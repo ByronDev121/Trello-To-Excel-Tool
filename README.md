@@ -1,7 +1,7 @@
 # Trello-To-Excel-Tool
 This is a tool which uses the trello api to request the kanban board data in JSON format and write that to csv. The VBA Macro are used to run the python script form excel. The excel file then queries the data from the csv file the python script updated.
 
-[![Image](./assests/main-img.PNG)](https://github.com/ByronDev121/Trello-To-Excel-Tool/)
+![Image](./assests/main-img.PNG)](https://github.com/ByronDev121/Trello-To-Excel-Tool/)
 
 Installing Python
 --------------
@@ -34,11 +34,11 @@ Set up TrelloData.xlsm
 
 2. In the 'Analytics' sheet, right click on the button named 'Update Data - Run Python Script' > Assign Macro...
 
-[![Image](./assests/open-marcos-1.png)]
+![Image](./assests/open-marcos-1.png)
 
 Then click 'RunPythonScript' and then click edit.
 
-[![Image](./assests/open-marcos-2.png)]
+![Image](./assests/open-marcos-2.png)
 
 3. Add paths to your python executable and python script(json_to_csv.py) to PythonExe and PythonScript variables on line 10 and 13:
 ```vba
@@ -62,8 +62,9 @@ python
 
 5. Once the python script is running the last thing left in the setup is recreating the query to data_file.csv. 
 
-5.1 In the excel file 'TrelloData.xlsm'. Click the data tab > open queries and connections and delete the exciting qeury. 
-[![Image](./assests/import-data-4.png)]
+5.1 In the excel file 'TrelloData.xlsm'. Click the data tab > open queries and connections and delete the exciting qeury.
+
+![Image](./assests/import-data-4.png)
 
 5.2. Then in the tool bar click new qeuery > file/csv and choose the data_file.csv int he directory.
 
@@ -71,12 +72,12 @@ python
 
 6. Lastly you'll have to update/replace the reference to Trello_Data everywhere #Ref exists in the Analytics sheet.
 
-[![Image](./assests/import-data-2.png)]
+![Image](./assests/import-data-2.png)
 
 *Maybe there is a better way to do this please let me know if you find a cleaner solution*
 6.1. Juts change #Ref
 
-[![Image](./assests/import-data-3.png)]
+![Image](./assests/import-data-3.png)
 
 Usage
 --------------
@@ -85,13 +86,13 @@ Clicking the button called "Updated Data" in the Analytics sheet will execute th
 
 The python script qeuries Trello, using your authentication details, for your board data. The first query is light on data but return the Project ID. The board data is filtered by the Project ID you set. The board ID is used to query trello a second time asking for a more data heavy payload, which includes card, member and List data. The script organises the data and writes in to the data_file.csv.
 
-[![Image](./assests/usage-1.png)]
+![Image](./assests/usage-1.png)
   
 ### Update Trello_Data sheet in TrelloData.xlsm 
 
 Open Queries and Connections and upadte the data from data_file.csv but clikcing on the update icon.
 
-[![Image](./assests/usage-2.png)]
+![Image](./assests/usage-2.png)
 
 ###### Your All Set!!!
 You can now report, find, group, calculate metrics and give analytics on much more easily and automated compared to a manual process. 
