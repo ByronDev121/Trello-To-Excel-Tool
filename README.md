@@ -83,9 +83,7 @@ python
 Usage
 --------------
 ### Fetch live data from trello and write it data_file.csv
-Clicking the button called "Updated Data" in the Analytics sheet will execute the macro script to invoke the json_to_csv.py. 
-
-The python script qeuries Trello, using your authentication details, for your board data. The first query is light on data but return the Project ID. The board data is filtered by the Project ID you set. The board ID is used to query trello a second time asking for a more data heavy payload, which includes card, member and List data. The script organises the data and writes in to the data_file.csv.
+Clicking the button called "Updated Data" in the Analytics sheet will execute the macro script which invokes json_to_csv.py. The python script qeuries Trello, using your authentication details, for your board data. The first query is light on data but return the Project ID. The board data is filtered by the Project ID you set. The board ID is used to query trello a second time asking for a more data heavy payload, which includes card, member and List data. The script organises the data and writes in to the data_file.csv.
 
 ![Image](./assests/usage-1.png)
   
