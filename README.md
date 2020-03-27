@@ -21,7 +21,7 @@ Get a Trello developers API key [here](https://trello.com/app-key/). Click on to
 
 Add Credetails to Python Script
 ------
-Open 'json-to-csv.js' in any text editor or IDE and your credentials in line 6 and 7:
+Open 'json_to_csv.py' in any text editor or IDE and your credentials in line 6 and 7:
 ```python
 # Set your credentials here:
 api_key = 'YOUR_API_KEY'
