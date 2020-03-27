@@ -72,9 +72,9 @@ python
 
 6. Lastly you'll have to update/replace the reference to Trello_Data everywhere #Ref exists in the Analytics sheet.
 
-![Image](./assests/import-data-2.png)
-
 *Maybe there is a better way to do this please let me know if you find a cleaner solution*
+
+![Image](./assests/import-data-2.png)
 
 6.1. Just replace #Ref with Trello_Data *(Or whatever you renamed your trello data sheet to)*
 
