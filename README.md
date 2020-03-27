@@ -94,7 +94,7 @@ Open Queries and Connections and upadte the data from data_file.csv but clikcing
 
 ![Image](./assests/usage-2.png)
 
-###### Your All Set!!!
+#### Your All Set!!!
 You can now report, find, group, calculate metrics and give analytics on much more easily and automated compared to a manual process. 
 
 License
