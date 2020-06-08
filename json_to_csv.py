@@ -3,8 +3,8 @@ import json
 import requests
 
 # Set your credentials here:
-api_key = '75a79d891741cd33cec0e2dee00970ed'
-token = 'def2f8c2f678bd71520547b5e5c7be3e0ebe5d037a1ccd0923c8044b74863ebd'
+api_key = 'yout key'
+token = 'your token'
 
 
 def write_data_to_csv(cards, lists, members, csv_writer):
