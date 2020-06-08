@@ -3,7 +3,7 @@ import json
 import requests
 
 # Set your credentials here:
-api_key = 'yout key'
+api_key = 'your key'
 token = 'your token'
 
 
